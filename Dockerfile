@@ -16,6 +16,7 @@ RUN cd /tmp \
     && apt-get -y install make \
     && make \
     && cp /tmp/apue.3e/lib/libapue.a /usr/lib \
+    && cp /tmp/apue.3e/include/apue.h /usr/include \
     && apt-get -y install vim
 # && apt-get -y autoremove \
 # && apt-get clean \
